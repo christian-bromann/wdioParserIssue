@@ -1,6 +1,5 @@
 #!/bin/sh
 
 echo "Pre-push hook copied and active"
-npm run e2e
 
 exit 0
