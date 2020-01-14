@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Pre-push hook copied and active"
+echo "Pre-push hook active"
 
 exit 0
