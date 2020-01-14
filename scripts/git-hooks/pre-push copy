@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo "Pre-push hook active"
+npm run e2e
+E2E_RESULT=$?
+
+if [ "$E2E_RESULT" -ne 0 ]
+then
+    echo 'Pre-push hook failed'
+    exit 5417
+fi
+
+exit 0
